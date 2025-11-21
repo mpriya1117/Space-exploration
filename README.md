@@ -38,7 +38,7 @@ My main website folder contains many thematic HTML pages such as: index.html our
 
 🌐 Live Demo
 
-Your website is hosted using GitHub Pages:https://mpriya1117.github.io/Space-exploration/
+Your website is hosted using GitHub Pages:
 
 🛠️ Technologies Used
 
