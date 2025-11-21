@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+    <title>Planetary Facts</title>
+</head>
+<body>
+
+<h1><marquee>PLANETARY FACTS</marquee></h1></div>
+    
+
+<style>
+    <!-- body {
+        background: url('https://i.pinimg.com/enabled/564x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg') ;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    } -->
+
+    <!-- body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    /* Space gradient background */
+    background: radial-gradient(circle at 50% 30%, #1a1a2e, #000814 70%, #000);
+
+    /* Animated stars */
+    background-image:
+        url("https://www.transparenttextures.com/patterns/stardust.png"),
+        radial-gradient(circle at 50% 30%, #1a1a2e, #000814 70%, #000);
+    animation: stars 40s linear infinite;
+}
+
+/* star drifting effect */
+@keyframes stars {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 800px 800px, 0 0; }
+} -->
+body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 40% 40%, rgba(255,0,150,0.25), transparent 60%);
+    animation: glow 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes glow {
+    0% { opacity: 0.2; transform: scale(1); }
+    100% { opacity: 0.5; transform: scale(1.3); }
+}
+
+    header {
+        background: url('https://i.pinimg.com/enabled/564x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg') no-repeat center center/cover;
+        padding: 50px 0;
+        color: #fff;
+    }
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    nav {
+        margin: 20px 0;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2em;
+    }
+    section {
+        padding: 20px;
+    }
+    footer {
+        background-color: #222;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .rotate {
+    transition: transform 1s;
+    }
+
+    .rotate:hover {
+    transform: rotate(10deg);
+    }
+    .gallery{
+        background-image: url( https://i.pinimg.com/enabled/564x/97/04/a3/9704a3edf038940e01dae3d438eb71f0.jpg);
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Welcome to Space Exploration</h1>
+    <nav>
+
+        <a href="multiuniverse.html">Our Universe</a>
+        <a href="OURGALAXY.HTML">Our Galaxy  </a>
+        <a href="OURSOLARSYSTEM.HTML">Our SolarSystem </a><br>
+
+        <a href="OURPLANET.HTML">Our Planet</a>
+        <a href="OURMOON.HTML">Our Moon </a>
+        <br>
+        <a href="PLANETS\PLANET.html">Planets</a>
+    </nav>
+</header>
+
+    <a href="Planteryquiz.html" style="text-decoration: none; color: inherit;"><h2> Plantery Quiz</h2></a>
+    <a href="imaginaryworld.html" style = "text-decoration: none; color: inherit;" ><h2>Imaginary World </h2></a>
+    
+    <br><br>
+
+
+<section id="mission">
+    <a href="ourmission.html" style="text-decoration: none; color: inherit;"><h2>Our Mission</h2></a>
+    <p>To explore the cosmos and unlock the mysteries of the universe.</p>
+</section>
+
+<br><br><br><br><br><br><br>
+
+
+
+<footer>
+    <p>&copy; 2024 Space Exploration. All rights reserved.</p>
+</footer>
+
+
+
+
+    
+</body>
+</html>
+

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body><style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+     body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    /* Space gradient background */
+    background: radial-gradient(circle at 50% 30%, #1a1a2e, #000814 70%, #000);
+
+    /* Animated stars */
+    background-image:
+        url("https://www.transparenttextures.com/patterns/stardust.png"),
+        radial-gradient(circle at 50% 30%, #1a1a2e, #000814 70%, #000);
+    animation: stars 40s linear infinite;
+}
+
+/* star drifting effect */
+@keyframes stars {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 800px 800px, 0 0; }
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 40% 40%, rgba(234, 140, 9, 0.25), transparent 60%);
+    animation: glow 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes glow {
+    0% { opacity: 0.2; transform: scale(1); }
+    100% { opacity: 0.5; transform: scale(1.3); }
+}
+
+
+    header {
+        background: url('https://example.com/space-background.jpg') no-repeat center center/cover;
+        padding: 50px 0;
+        color: #fff;
+    }
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    nav {
+        margin: 20px 0;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2em;
+    }
+    section {
+        padding: 20px;
+    }
+    footer {
+        background-color: #222;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .slide-up img {
+  transition: transform 0.3s;
+}
+
+.slide-up:hover img {
+  transform: translateY(-20px);
+}
+.planet-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.planet-card {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.planet-card img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.planet-card span {
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+/* hover effects */
+.planet-card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 25px rgba(255,255,255,0.4);
+    border-color: rgba(255,255,255,0.8);
+}
+
+.planet-card:hover img {
+    transform: scale(1.2) rotate(10deg);
+}
+
+</style>
+</head>
+<body>
+<header>
+
+    <CENTER><h1> OUR SOLAR SYSTEM</h1></CENTER>
+    <br>
+    <br>
+    <br>
+   <b> Our solar system is located in the Milky Way, a barred spiral galaxy with two major arms, and two minor arms.</b>
+
+   <h4>
+    <P align="left">
+        The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. It was formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, forming the Sun and a protoplanetary disc. The Sun is a typical star that maintains a balanced equilibrium by the fusion of hydrogen into helium at its core, releasing this energy from its outer photosphere. Astronomers classify it as a G-type main-sequence star.<BR>
+            <BR>
+
+                <center><a href="PLANETS/PLANET.html"><img src="https://as2.ftcdn.net/v2/jpg/02/64/72/07/1000_F_264720706_kJfXrXVbbY5RFxPsI7xXgWjWNmWD6h6h.jpg"></a> </center>
+        
+<p align="left">
+The largest objects that orbit the Sun are the eight planets. In order from the Sun, they are four terrestrial planets (Mercury, Venus, Earth and Mars); two gas giants (Jupiter and Saturn); and two ice giants (Uranus and Neptune). All terrestrial planets have solid surfaces. Inversely, all giant planets do not have a definite surface, as they are mainly composed of gases and liquids. Over 99.86% of the Solar System's mass is in the Sun and nearly 90% of the remaining mass is in Jupiter and Saturn.<br>
+
+There is a strong consensus among astronomers that the Solar System has at least nine dwarf planets: Ceres, Orcus, Pluto, Haumea, Quaoar, Makemake, Gonggong, Eris, and Sedna. There are a vast number of small Solar System bodies, such as asteroids, comets, centaurs, meteoroids, and interplanetary dust clouds. Some of these bodies are in the asteroid belt (between Mars's and Jupiter's orbit) and the Kuiper belt (just outside Neptune's orbit). Six planets, seven dwarf planets, and other bodies have orbiting natural satellites, which are commonly called 'moons'.<br></p>
+<video height="500px"width="" controls autoplay loop muted >
+    <source src="https://media.istockphoto.com/id/2083347308/video/educative-graph-of-planets-in-the-solar-system-in-a-row-with-names.mp4?s=mp4-640x640-is&k=20&c=Of8b-owPID0VH4HXA4OLPTPF0gBpnYNuom9EmZTAMoM=" type="video/mp4">
+  </video>
+<br><br>
+<table><tr><td cellpadding="03"><section class="slide-up">
+<CENTER><img src="https://i.pinimg.com/736x/b9/43/5b/b9435ba648ac12be7794a605b9e47bf0.jpg" width="200px"></section></CENTER><BR></td><td></td><td></td>
+    <td cellpadding="03">
+<center><img src=""></center>
+<p align="justify">
+The Solar System is constantly flooded by the Sun's charged particles, the solar wind, forming the heliosphere. Around 75–90 astronomical units from the Sun, the solar wind is halted, resulting in the heliopause. This is the boundary of the Solar System to interstellar space. The outermost region of the Solar System is the theorized Oort cloud, the source for long-period comets, extending to a radius of 2,000–200,000 AU. The closest star to the Solar System, Proxima Centauri, is 4.25 light-years (269,000 AU) away. Both stars belong to the Milky Way galaxy.
+Formation and <br>evolution.
+    </P></td><td><td></td>
+    <td cellspacing="7" align="justify">Earth's neighbors in space include comets, asteroids, dwarf planets, mysterious moons and a host of strange phenomena that are so out-of-this-world they elude explanation. 
+
+        Scientists have discovered ice-spewing volcanoes on Pluto, while Mars is home to a truly "grand" canyon the size of the United States. There may even be a giant, undiscovered planet lurking somewhere beyond Neptune. Read on for some of the strangest facts about the solar system. </td>
+        <!-- <video height="200px"><source src=""></video> -->
+   </h4><br>
+<td><td></td><td>
+   <CENTER> <H2>OUR SUN</H2></CENTER>
+<br><section class="slide-up">
+   <a href="PLANETS/SUN.HTML" align="right"><img src="https://i.pinimg.com/564x/d3/06/8a/d3068a91135436bbc4e8a4f1d1bccb5a.jpg" width="300px"></a></section></td></table>
+
+   <video height="500px"width="" controls autoplay loop muted >
+    <source src="https://media.istockphoto.com/id/473334107/video/earth-in-the-solar-system.mp4?s=mp4-640x640-is&k=20&c=lpbgp4V3gOm467zQkXRZJsNadA7xTaEaeWSx3YekZDM=" type="video/mp4">
+  </video>
+
+  <CENTER> <H2>INNER SOLAR SYSTEM</H2></CENTER>
+   <P align="center">
+    The inner Solar System is the region comprising the terrestrial planets and the asteroids. Composed mainly of silicates and metals,the objects of the inner Solar System are relatively close to the Sun; the radius of this entire region is less than the distance between the orbits of Jupiter and Saturn. This region is within the frost line, which is a little less than 5 AU from the Sun.
+   </P><BR>
+
+   <CENTER> <h3>INNER PLANETS</h3></CENTER><BR>
+    <P align="left">
+        The four terrestrial or inner planets have dense, rocky compositions, few or no moons, and no ring systems. They are composed largely of refractory minerals such as silicates—which form their crusts and mantles—and metals such as iron and nickel which form their cores. Three of the four inner planets <B>(Venus, Earth, and Mars)</B> have atmospheres substantial enough to generate weather; all have impact craters and tectonic surface features, such as rift valleys and volcanoes.
+
+    </P><BR>
+  <CENTER> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Terrestrial_planet_sizes_3.jpg/330px-Terrestrial_planet_sizes_3.jpg"></CENTER><BR>
+
+  <CENTER><B>The four terrestrial planets Mercury, Venus, Earth and Mars</B></CENTER><BR>
+
+    <CENTER> <H2>OUTER SOLAR SYSTEM</H2></CENTER>
+
+<P align="left">The outer region of the Solar System is home to the giant planets and their large moons. The centaurs and many short-period comets orbit in this region. Due to their greater distance from the Sun, the solid objects in the outer Solar System contain a higher proportion of volatiles, such as water, ammonia, and methane than those of the inner Solar System because the lower temperatures allow these compounds to remain solid, without significant rates of sublimation.
+
+</P><BR>
+    <CENTER> <h3>OUTER PLANETS</h3></CENTER><BR>
+
+        <P align="left">
+            The four outer planets<B>( Jupiter, Saturn, Uranus and Neptune)</B>, called giant planets or Jovian planets, collectively make up 99% of the mass known to orbit the Sun. All four giant planets have multiple moons and a ring system, although only Saturn's rings are easily observed from Earth.Jupiter and Saturn are composed mainly of gases with extremely low melting points, such as hydrogen, helium, and neon, hence their designation as gas giants. Uranus and Neptune are ice giants, meaning they are significantly composed of 'ice' in the astronomical sense, as in chemical compounds with melting points of up to a few hundred kelvins such as water, methane, ammonia, hydrogen sulfide, and carbon dioxide. Icy substances comprise the majority of the satellites of the giant planets and small objects that lie beyond Neptune's orbit.
+
+        </P><BR>
+
+            <CENTER><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Planet_collage_to_scale_%28captioned%29.jpg/330px-Planet_collage_to_scale_%28captioned%29.jpg"></CENTER>
+
+            
+      <CENTER><B>The outer planets Jupiter, Saturn, Uranus and Neptune, compared to the inner planets Earth, Venus, Mars, and Mercury at the bottom right.</B></CENTER>  <BR><BR>  
+        
+        <center><h3><u>About Our Solar System</u> </h3></center>
+        <center>
+           <b> The Sun, planets, moons and dwarf planets
+(true color, size to scale, distances not to scale)</b><br></center>
+<br><LEFT><PRE>
+<u><b>Age:</u></b>	4.568 billion years.<br>
+</PRE>
+
+<center><PRE><h3>
+<b><u>Star:</b></u>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&<a href="PLANETS/SUN.HTML" style="text-decoration: none; color: inherit;"class="planet-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/1073px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg" alt="sun"><h2>SUN</h2></a>
+
+   <div class="planet-container">
+
+    <b><u>Planets:</b></u>
+    
+  <a href="PLANETS/MERCURY.HTML" class="planet-card">
+      <img src="https://worldteachertrust.org/_media/images/mercury.jpg?w=245&tok=073501" alt="Mercury">
+      <span>Mercury</span>
+  </a>
+
+  <a href="PLANETS/VENUS.HTML" class="planet-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREkxV4UXmC-cv_T55HIk6W3sxLDHKo2G0rmw&s" alt="Venus">
+      <span>Venus</span>
+  </a>
+
+  <a href="OURPLANET.HTML" class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/The_Blue_Marble%2C_AS17-148-22727.jpg/500px-The_Blue_Marble%2C_AS17-148-22727.jpg" alt="Earth">
+      <span>Earth</span>
+  </a>
+
+  <a href="PLANETS/MARS.HTML" class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+      <span>Mars</span>
+  </a>
+
+  <a href="PLANETS/JUPITER.HTML" class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jupiter_OPAL_2024.png/1200px-Jupiter_OPAL_2024.png" alt="Jupiter">
+      <span>Jupiter</span>
+  </a>
+
+  <a href="PLANETS/SATURN.HTML" class="planet-card">
+      <img src="https://www.astrojem.net/wp-content/uploads/2021/01/saturno.jpg" alt="Saturn">
+      <span>Saturn</span>
+  </a>
+
+  <a href="PLANETS/URENUS.HTML" class="planet-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVpIGFY1RCPL7aABlmthmV32PYyuP27Fcv8IqclIPcyV8-W5g5h1Ir2NHCUXDuf5S9e74&usqp=CAU" alt="Uranus">
+      <span>Uranus</span>
+  </a>
+
+  <a href="PLANETS/NEPTUNE.HTML" class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Neptune_Voyager2_color_calibrated.png/500px-Neptune_Voyager2_color_calibrated.png" alt="Neptune">
+      <span>Neptune</span>
+  </a>
+
+</div>
+
+    </center>
+    <center><h4><b>Planetary system</b><br><br></h4></center>
+    <table>
+        <tr><td>
+
+<P align="LEFT"><b><u>Star spectral type:</u></b>	G2V<br>
+<b><u>Frost line:</u></b>	~5 AU<br>
+<b><u>Semi-major axis of outermost planet:</u></b>	30.07 AU (Neptune)<br>
+<b><u>Kuiper cliff: </u></b>	50–70 AU<br>
+<b><u>Heliopaus:</u></b>detected at 120 AU<br>
+<b><u>Hill sphere : </u></b>	1.1 pc (230,000 AU) – 0.865 pc (178,419 AU)<br>
+<b><u>Orbit about Galactic : </u></b>Center<br>
+<b><u>Invariable-to-galactic plane inclination:</u></b>	~60°, to the ecliptic <br>
+<b><u>Distance to Galactic Center: </u></b>	24,000–28,000 ly <br>
+
+<b><u>Orbital speed:</u></b>	720,000 km/h (450,000 mi/h)<br>
+<b><u>Orbital period:</u></b>	~230 million years<br><br></td>
+ 
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td align="left"><H4>
+    <b><u>Known natural satellites:</u></b>	758<br>
+    <b><u>Known minor planets:</u></b>	1,368,528<br>
+    <b><u>Known comets :</u></b>	4,591<br><br></H4></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td><td><u><b>Known dwarf planets:</u></b><br>
+
+       <p align="left"> Ceres<br>
+        Orcus<br>
+        Pluto<br>
+        Haumea<br>
+        Quaoar<br>
+        Makemake<br>
+        Gonggong<br>
+        Eris<br>
+        Sedna<br>
+         more candidates...<br></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td>
+        Photosphere composition by mass of sun :<br>
+            
+    
+           <p align="left"> 73.46% hydrogen<br>
+            24.85% helium<br>
+            0.77% oxygen<br>
+            0.29% carbon<br>
+            0.16% iron<br>
+            0.12% neon<br>
+            0.09% nitrogen<br>
+            0.07% silicon<br>
+            0.05% magnesium<br>
+            0.04% sulfur<br></p>
+    </td>
+</tr>
+</table>
+
+
+      <center><img src="https://i.pinimg.com/564x/af/42/e9/af42e9f45bd3321b65d4b645a940df4b.jpg"> </center><BR>
+        <BR>
+
+            <center><a href="index.HTML" style="text-decoration: none; color: inherit;">Click Here To Go Home Page.</a></center>
+
+
+</body>
+</html>

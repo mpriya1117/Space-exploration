@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>mars</title>
+</head>
+<body>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .space-box {
+    position: relative;
+    padding: 30px;
+    margin: 10px auto;
+    width: 95%;
+    max-width: 1500px;
+
+    /* your desired effect */
+    background: radial-gradient(circle at 50% 30%, #1a1a2e 0%, #000814 70%, #000 100%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.space-box {
+    width: 100%;
+    padding: 80px 40px;
+    border-radius: 0;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(8px);
+}
+
+/* star drifting effect inside the div */
+.space-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.20;
+    animation: stars 40s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* swirl effect inside the div */
+.space-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: conic-gradient(
+        from 0deg,
+        rgba(255, 3, 3, 0.12),
+        transparent,
+        rgba(254, 120, 3, 0.12),
+        transparent
+    );
+    animation: swirl 12s linear infinite;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes stars {
+    from { transform: translate(0,0); }
+    to   { transform: translate(800px,800px); }
+}
+
+@keyframes swirl {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* make your actual content appear above the effects */
+.space-box > * {
+    position: relative;
+    z-index: 2;
+}
+
+        header {
+            background: url('https://i.pinimg.com/564x/28/e5/2c/28e52c71c91e8fc3f4678a64f6bc0dfe.jpg') no-repeat center center/cover;
+            padding: 50px 0;
+            color: #fff;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+        }
+        .mars {
+            position: relative;
+        }
+        .mars .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .mars:hover .text {
+            opacity: 0.5;
+        }
+        .slide-up img {
+            transition: transform 0.8s;
+        }
+
+        .slide-up:hover img {
+            transform: translatex(-20px);
+        }
+        .mars {
+            position: relative;
+        }
+        .mars .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .mars:hover .text {
+            opacity: 1;
+        }
+ 
+        footer {
+            background-color: #222;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    </head>
+    <body>
+    <header>
+
+
+<div class= "space-box">
+    <h1></h1>
+<h1 align="center">Mars</h1>
+  
+    <P align="left">
+        Mars is the fourth planet from the Sun. The surface of Mars is orange-red because it is covered in iron(III) oxide dust, giving it the nickname "the Red Planet". Mars is among the brightest objects in Earth's sky, and its high-contrast albedo features have made it a common subject for telescope viewing. It is classified as a terrestrial planet and is the second smallest of the Solar System's planets with a diameter of 6,779 km (4,212 mi). In terms of orbital motion, a Martian solar day (sol) is equal to 24.5 hours, and a Martian solar year is equal to 1.88 Earth years (687 Earth days). Mars has two natural satellites that are small and irregular in shape: Phobos and Deimos.<br><br>
+
+        The relatively flat plains in northern parts of Mars strongly contrast with the cratered terrain in southern highlands – this terrain observation is known as the Martian dichotomy. Mars hosts many enormous extinct volcanoes (the tallest is Olympus Mons, 21.9 km or 13.6 mi tall) and one of the largest canyons in the Solar System (Valles Marineris, 4,000 km or 2,500 mi long). Geologically, the planet is fairly active with marsquakes trembling underneath the ground, dust devils sweeping across the landscape, and cirrus clouds. Carbon dioxide is substantially present in Mars's polar ice caps and thin atmosphere. During a year, there are large surface temperature swings on the surface between −78.5 °C (−109.3 °F) to 5.7 °C (42.3 °F) similar to Earth's seasons, as both planets have significant axial tilt.<br><br>
+        
+        Mars was formed approximately 4.5 billion years ago. During the Noachian period (4.5 to 3.5 billion years ago), Mars's surface was marked by meteor impacts, valley formation, erosion, and the possible presence of water oceans. The Hesperian period (3.5 to 3.3–2.9 billion years ago) was dominated by widespread volcanic activity and flooding that carved immense outflow channels. The Amazonian period, which continues to the present, has been marked by the wind as a dominant influence on geological processes. Due to Mars's geological history, the possibility of past or present life on Mars remains of great scientific interest.<br><br>
+        
+        Since the late 20th century, Mars has been explored by uncrewed spacecraft and rovers, with the first flyby by the Mariner 4 probe in 1965, the first orbit by the Mars 2 probe in 1971, and the first landing by the Viking 1 probe in 1976. As of 2023, there are at least 11 active probes orbiting Mars or on the Martian surface. Mars is an attractive target for future human exploration missions, though in the 2020s no such mission is planned. <br><br>
+   
+    </P><br>
+    <section class="mars">
+            <center><img src="https://static.scientificamerican.com/sciam/cache/file/C454F5A6-536E-4C9F-AA6AF354BB85A85B_source.jpg?w=1200" height="500px"></center><section class="text"><h2><b>Dry</b> and  <b>Rockey </b> Red Planet</h2></section>
+        </section>
+
+    
+    <center><b>Mars in true color,as captured by the Hope orbiter. The Tharsis Montes can be seen at the center, with Olympus Mons just to the left and Valles Marineris at the right.</b></center>
+<p align="left">
+    Scientists have theorized that during the Solar System's formation, Mars was created as the result of a random process of run-away accretion of material from the protoplanetary disk that orbited the Sun. Mars has many distinctive chemical features caused by its position in the Solar System. Elements with comparatively low boiling points, such as chlorine, phosphorus, and sulfur, are much more common on Mars than on Earth; these elements were probably pushed outward by the young Sun's energetic solar wind.<br><br>
+
+    After the formation of the planets, the inner Solar System may have been subjected to the so-called Late Heavy Bombardment. About 60% of the surface of Mars shows a record of impacts from that era,  whereas much of the remaining surface is probably underlain by immense impact basins caused by those events. However, more recent modeling has disputed the existence of the Late Heavy Bombardment. There is evidence of an enormous impact basin in the Northern Hemisphere of Mars, spanning 10,600 by 8,500 kilometres (6,600 by 5,300 mi), or roughly four times the size of the Moon's South Pole–Aitken basin, which would be the largest impact basin yet discovered if confirmed. It has been hypothesized that the basin was formed when Mars was struck by a Pluto-sized body about four billion years ago. The event, thought to be the cause of the Martian hemispheric dichotomy, created the smooth Borealis basin that covers 40% of the planet.<br><br>
+    
+    A 2023 study shows evidence, based on the orbital inclination of Deimos (a small moon of Mars), that Mars may once have had a ring system 3.5 billion years to 4 billion years ago. This ring system may have been formed from a moon, 20 times more massive than Phobos, orbiting Mars billions of years ago; and Phobos would be a remnant of that ring.<br><br>
+    
+    The geological history of Mars can be split into many periods, but the following are the three primary periods:<br><br>
+    &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+       <b>Noachian period: </b> Formation of the oldest extant surfaces of Mars, 4.5 to 3.5 billion years ago. Noachian age surfaces are scarred by many large impact craters. The Tharsis bulge, a volcanic upland, is thought to have formed during this period, with extensive flooding by liquid water late in the period. Named after Noachis Terra.<br><br>
+       &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+       <b> Hesperian period:</b>  3.5 to between 3.3 and 2.9 billion years ago. The Hesperian period is marked by the formation of extensive lava plains. Named after Hesperia Planum.
+        Amazonian period: between 3.3 and 2.9 billion years ago to the present. Amazonian regions have few meteorite impact craters but are otherwise quite varied. Olympus Mons formed during this period, with lava flows elsewhere on Mars. Named after Amazonis Planitia.<br><br>
+    
+    Geological activity is still taking place on Mars. The Athabasca Valles is home to sheet-like lava flows created about 200 million years ago. Water flows in the grabens called the Cerberus Fossae occurred less than 20 million years ago, indicating equally recent volcanic intrusions.The Mars Reconnaissance Orbiter has captured images of avalanches.<br>
+</p><br>    </div>
+
+
+    <center><img src="https://i.pinimg.com/564x/6a/0b/2f/6a0b2fa591aac569ce09bf33a980c2d3.jpg"></center><br>
+
+    <p align="left">
+        Mars lost its magnetosphere 4 billion years ago,possibly because of numerous asteroid strikes,so the solar wind interacts directly with the Martian ionosphere, lowering the atmospheric density by stripping away atoms from the outer layer. Both Mars Global Surveyor and Mars Express have detected ionized atmospheric particles trailing off into space behind Mars, and this atmospheric loss is being studied by the MAVEN orbiter. Compared to Earth, the atmosphere of Mars is quite rarefied. Atmospheric pressure on the surface today ranges from a low of 30 Pa (0.0044 psi) on Olympus Mons to over 1,155 Pa (0.1675 psi) in Hellas Planitia, with a mean pressure at the surface level of 600 Pa (0.087 psi). The highest atmospheric density on Mars is equal to that found 35 kilometres (22 mi)[117] above Earth's surface. The resulting mean surface pressure is only 0.6% of Earth's 101.3 kPa (14.69 psi). The scale height of the atmosphere is about 10.8 kilometres (6.7 mi), which is higher than Earth's 6 kilometres (3.7 mi), because the surface gravity of Mars is only about 38% of Earth's.<br><br>
+
+        The atmosphere of Mars consists of about 96% carbon dioxide, 1.93% argon and 1.89% nitrogen along with traces of oxygen and water. The atmosphere is quite dusty, containing particulates about 1.5 μm in diameter which give the Martian sky a tawny color when seen from the surface. It may take on a pink hue due to iron oxide particles suspended in it. The concentration of methane in the Martian atmosphere fluctuates from about 0.24 ppb during the northern winter to about 0.65 ppb during the summer. Estimates of its lifetime range from 0.6 to 4 years, so its presence indicates that an active source of the gas must be present. Methane could be produced by non-biological process such as serpentinization involving water, carbon dioxide, and the mineral olivine, which is known to be common on Mars, or by Martian life.
+        Escaping atmosphere on Mars (carbon, oxygen, and hydrogen) by MAVEN in UV.<br><br>
+        
+        Compared to Earth, its higher concentration of atmospheric CO<sub>2</sub> and lower surface pressure may be why sound is attenuated more on Mars, where natural sources are rare apart from the wind. Using acoustic recordings collected by the Perseverance rover, researchers concluded that the speed of sound there is approximately 240 m/s for frequencies below 240 Hz, and 250 m/s for those above.<br><br>
+        
+        Auroras have been detected on Mars.Because Mars lacks a global magnetic field, the types and distribution of auroras there differ from those on Earth; rather than being mostly restricted to polar regions as is the case on Earth, a Martian aurora can encompass the planet. In September 2017, NASA reported radiation levels on the surface of the planet Mars were temporarily doubled, and were associated with an aurora 25 times brighter than any observed earlier, due to a massive, and unexpected, solar storm in the middle of the month.<br><br>
+
+        <section class="slide-up">
+            <center><img src="https://cdn.mos.cms.futurecdn.net/EjjVxJ8DCca2MVc8qBGtXK.jpg" height="350px"></center></section>
+        
+
+        Mars has seasons, alternating between its northern and southern hemispheres, similar to on Earth. Additionally the orbit of Mars has, compared to Earth's, a large eccentricity and approaches perihelion when it is summer in its southern hemisphere and winter in its northern, and aphelion when it is winter in its southern hemisphere and summer in its northern. As a result, the seasons in its southern hemisphere are more extreme and the seasons in its northern are milder than would otherwise be the case. The summer temperatures in the south can be warmer than the equivalent summer temperatures in the north by up to 30 °C (54 °F).<br><br>
+
+Martian surface temperatures vary from lows of about −110 °C (−166 °F) to highs of up to 35 °C (95 °F) in equatorial summer.[16] The wide range in temperatures is due to the thin atmosphere which cannot store much solar heat, the low atmospheric pressure (about 1% that of the atmosphere of Earth), and the low thermal inertia of Martian soil. The planet is 1.52 times as far from the Sun as Earth, resulting in just 43% of the amount of sunlight.<br><br>
+
+Mars has the largest dust storms in the Solar System, reaching speeds of over 160 km/h (100 mph). These can vary from a storm over a small area, to gigantic storms that cover the entire planet. They tend to occur when Mars is closest to the Sun, and have been shown to increase global temperature.
+Rendering of the change of CO<sub>2</sub> ice (not water ice) coverage on the north (left) and south (right) poles of Mars between northern and southern summer.<br><br>
+
+
+
+    </p><br>
+<section class="mars">
+<center><img src="https://i.pinimg.com/564x/0a/ae/e1/0aaee16727f1388139de1727d4002b41.jpg"></center><section class="text"><h1>A distinct rusty red thin atmospheric plant</h1></section></section>
+
+<p align="left">
+    Mars is approximately half the diameter of Earth, with a surface area only slightly less than the total area of Earth's dry land Mars is less dense than Earth, having about 15% of Earth's volume and 11% of Earth's mass, resulting in about 38% of Earth's surface gravity. Mars is the only presently known example of a desert planet, a rocky planet with a surface akin to that of Earth's hot deserts. The red-orange appearance of the Martian surface is caused by ferric oxide, or rust. It can look like butterscotch;other common surface colors include golden, brown, tan, and greenish, depending on the minerals present.<br><br>
+
+    Like Earth, Mars is differentiated into a dense metallic core overlaid by less dense rocky layers. The outermost layer is the crust, which is on average about 42–56 kilometres (26–35 mi) thick, with a minimum thickness of 6 kilometres (3.7 mi) in Isidis Planitia, and a maximum thickness of 117 kilometres (73 mi) in the southern Tharsis plateau. For comparison, Earth's crust averages 27.3 ± 4.8 km in thickness. The most abundant elements in the Martian crust are silicon, oxygen, iron, magnesium, aluminium, calcium, and potassium. Mars is confirmed to be seismically active; in 2019 it was reported that InSight had detected and recorded over 450 marsquakes and related events.<br><br>
+
+    Beneath the crust is a silicate mantle responsible for many of the tectonic and volcanic features on the planet's surface. The upper Martian mantle is a low-velocity zone, where the velocity of seismic waves is lower than surrounding depth intervals. The mantle appears to be rigid down to the depth of about 250 km, giving Mars a very thick lithosphere compared to Earth. Below this the mantle gradually becomes more ductile, and the seismic wave velocity starts to grow again.The Martian mantle does not appear to have a thermally insulating layer analogous to Earth's lower mantle; instead, below 1050 km in depth, it becomes mineralogically similar to Earth's transition zone. At the bottom of the mantle lies a basal liquid silicate layer approximately 150–180 km thick.
+    
+    Mars's iron and nickel core is completely molten, with no solid inner core. It is around half of Mars's radius, approximately 1650–1675 km, and is enriched in light elements such as sulfur, oxygen, carbon, and hydrogen.<br>
+    <h3 align="center">Surface geology
+    </h3>
+    
+    Mars is a terrestrial planet with a surface that consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The Martian surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt and may be similar to andesitic rocks on Earth, or silica glass. Regions of low albedo suggest concentrations of plagioclase feldspar, with northern low albedo regions displaying higher than normal concentrations of sheet silicates and high-silicon glass. Parts of the southern highlands include detectable amounts of high-calcium pyroxenes. Localized concentrations of hematite and olivine have been found. Much of the surface is deeply covered by finely grained iron(III) oxide dust.<br><br>
+    
+    Although Mars has no evidence of a structured global magnetic field, observations show that parts of the planet's crust have been magnetized, suggesting that alternating polarity reversals of its dipole field have occurred in the past. This paleomagnetism of magnetically susceptible minerals is similar to the alternating bands found on Earth's ocean floors. One hypothesis, published in 1999 and re-examined in October 2005 (with the help of the Mars Global Surveyor), is that these bands suggest plate tectonic activity on Mars four billion years ago, before the planetary dynamo ceased to function and the planet's magnetic field faded.<br><br>
+    
+    The Phoenix lander returned data showing Martian soil to be slightly alkaline and containing elements such as magnesium, sodium, potassium and chlorine. These nutrients are found in soils on Earth. They are necessary for growth of plants.Experiments performed by the lander showed that the Martian soil has a basic pH of 7.7, and contains 0.6% perchlorate by weight, concentrations that are toxic to humans.<br><br>
+    
+    Streaks are common across Mars and new ones appear frequently on steep slopes of craters, troughs, and valleys. The streaks are dark at first and get lighter with age. The streaks can start in a tiny area, then spread out for hundreds of metres. They have been seen to follow the edges of boulders and other obstacles in their path. The commonly accepted hypotheses include that they are dark underlying layers of soil revealed after avalanches of bright dust or dust devils. Several other explanations have been put forward, including those that involve water or even the growth of organisms.<br><br>
+    
+    Environmental radiation levels on the surface are on average 0.64 millisieverts of radiation per day, and significantly less than the radiation of 1.84 millisieverts per day or 22 millirads per day during the flight to and from Mars.For comparison the radiation levels in low Earth orbit, where Earth's space stations orbit, are around 0.5 millisieverts of radiation per day. Hellas Planitia has the lowest surface radiation at about 0.342 millisieverts per day, featuring lava tubes southwest of Hadriacus Mons with potentially levels as low as 0.064 millisieverts per day, comparable to radiation levels during flights on Earth. <br>
+
+</p><br>
+
+    <center>  <img src="https://i.pinimg.com/474x/74/62/3a/74623a99801209dd7667f0de37779bc1.jpg"></center><br>
+
+<p align="left">
+    While Mars contains water in larger amounts, most of it is dust covered water ice at the Martian polar ice caps. The volume of water ice in the south polar ice cap, if melted, would be enough to cover most of the surface of the planet with a depth of 11 metres (36 ft).<br>
+
+    Water in its liquid form cannot prevail on the surface of Mars due to the low atmospheric pressure on Mars, which is less than 1% that of Earth,only at the lowest of elevations pressure and temperature is high enough for water being able to be liquid for short periods.<br>
+    
+    Water in the atmosphere is small, but enough to produce larger clouds of water ice and different cases of snow and frost, often mixed with snow of carbon dioxide dry ice.<br><br>
+    
+    Along craters and canyon walls, there are thousands of features that appear similar to terrestrial gullies. The gullies tend to be in the highlands of the Southern Hemisphere and face the Equator; all are poleward of 30° latitude. A number of authors have suggested that their formation process involves liquid water, probably from melting ice,although others have argued for formation mechanisms involving carbon dioxide frost or the movement of dry dust. No partially degraded gullies have formed by weathering and no superimposed impact craters have been observed, indicating that these are young features, possibly still active. Other geological features, such as deltas and alluvial fans preserved in craters, are further evidence for warmer, wetter conditions at an interval or intervals in earlier Mars history. Such conditions necessarily require the widespread presence of crater lakes across a large proportion of the surface, for which there is independent mineralogical, sedimentological and geomorphological evidence. Further evidence that liquid water once existed on the surface of Mars comes from the detection of specific minerals such as hematite and goethite, both of which sometimes form in the presence of water.<br><br>
+
+
+
+
+
+</p><br>
+
+
+    <center><img src="https://i.pinimg.com/564x/11/fa/eb/11faeb2910fd8eb97f1036d6683b0ba0.jpg"></center><br>
+
+    <p align="left">
+Mars's average distance from the Sun is roughly 230 million km (143 million mi), and its orbital period is 687 (Earth) days. The solar day (or sol) on Mars is only slightly longer than an Earth day: 24 hours, 39 minutes, and 35.244 seconds. A Martian year is equal to 1.8809 Earth years, or 1 year, 320 days, and 18.2 hours. The gravitational potential difference and thus the delta-v needed to transfer between Mars and Earth is the second lowest for Earth.<br><br>
+
+The axial tilt of Mars is 25.19° relative to its orbital plane, which is similar to the axial tilt of Earth.As a result, Mars has seasons like Earth, though on Mars they are nearly twice as long because its orbital period is that much longer. In the present day, the orientation of the north pole of Mars is close to the star Deneb.<br><br>
+
+Mars has a relatively pronounced orbital eccentricity of about 0.09; of the seven other planets in the Solar System, only Mercury has a larger orbital eccentricity. It is known that in the past, Mars has had a much more circular orbit. At one point, 1.35 million Earth years ago, Mars had an eccentricity of roughly 0.002, much less than that of Earth today.Mars's cycle of eccentricity is 96,000 Earth years compared to Earth's cycle of 100,000 years.<br><br>
+
+Mars has its closest approach to Earth (opposition) in a synodic period of 779.94 days. It should not be confused with Mars conjunction, where the Earth and Mars are at opposite sides of the Solar System and form a straight line crossing the Sun. The average time between the successive oppositions of Mars, its synodic period, is 780 days; but the number of days between successive oppositions can range from 764 to 812. The distance at close approach varies between about 54 and 103 million km (34 and 64 million mi) due to the planets' elliptical orbits, which causes comparable variation in angular size.At their furthest Mars and Earth can be as far as 401 million km (249 million mi) apart. Mars comes into opposition from Earth every 2.1 years. The planets come into opposition near Mars's perihelion in 2003, 2018 and 2035, with the 2020 and 2033 events being particularly close to perihelic opposition.<br><br>
+
+The mean apparent magnitude of Mars is +0.71 with a standard deviation of 1.05. Because the orbit of Mars is eccentric, the magnitude at opposition from the Sun can range from about −3.0 to −1.4. The minimum brightness is magnitude +1.86 when the planet is near aphelion and in conjunction with the Sun At its brightest, Mars (along with Jupiter) is second only to Venus in apparent brightness. Mars usually appears distinctly yellow, orange, or red. When farthest away from Earth, it is more than seven times farther away than when it is closest. Mars is usually close enough for particularly good viewing once or twice at 15-year or 17-year intervals. Optical ground-based telescopes are typically limited to resolving features about 300 kilometres (190 mi) across when Earth and Mars are closest because of Earth's atmosphere.<br><br>
+
+
+As Mars approaches opposition, it begins a period of retrograde motion, which means it will appear to move backwards in a looping curve with respect to the background stars. This retrograde motion lasts for about 72 days, and Mars reaches its peak apparent brightness in the middle of this interval.<br><br>
+
+    </p><br>
+
+    <center><img src="https://i.pinimg.com/564x/fd/f3/08/fdf308d21306c2adb40a2d5f5258bc43.jpg"></center><br>
+
+    <p align="left">
+        Mars has two relatively small (compared to Earth's) natural moons, Phobos (about 22 kilometres (14 mi) in diameter) and Deimos (about 12 kilometres (7.5 mi) in diameter), which orbit close to the planet. The origin of both moons is unclear, although a popular theory states that they were asteroids captured into Martian orbit.<br><br>
+
+Both satellites were discovered in 1877 by Asaph Hall and were named after the characters Phobos (the deity of panic and fear) and Deimos (the deity of terror and dread), twins from Greek mythology who accompanied their father Ares, god of war, into battle. Mars was the Roman equivalent to Ares. In modern Greek, the planet retains its ancient name Ares (Aris: Άρης).<br><br>
+
+From the surface of Mars, the motions of Phobos and Deimos appear different from that of the Earth's satellite, the Moon. Phobos rises in the west, sets in the east, and rises again in just 11 hours. Deimos, being only just outside synchronous orbit – where the orbital period would match the planet's period of rotation – rises as expected in the east, but slowly. Because the orbit of Phobos is below a synchronous altitude, tidal forces from Mars are gradually lowering its orbit. In about 50 million years, it could either crash into Mars's surface or break up into a ring structure around the planet.<br><br>
+
+The origin of the two satellites is not well understood. Their low albedo and carbonaceous chondrite composition have been regarded as similar to asteroids, supporting a capture theory. The unstable orbit of Phobos would seem to point toward a relatively recent capture. But both have circular orbits near the equator, which is unusual for captured objects, and the required capture dynamics are complex. Accretion early in the history of Mars is plausible, but would not account for a composition resembling asteroids rather than Mars itself, if that is confirmed. Mars may have yet-undiscovered moons, smaller than 50 to 100 metres (160 to 330 ft) in diameter, and a dust ring is predicted to exist between Phobos and Deimos.<br><br>
+
+A third possibility for their origin as satellites of Mars is the involvement of a third body or a type of impact disruption. More-recent lines of evidence for Phobos having a highly porous interior, and suggesting a composition containing mainly phyllosilicates and other minerals known from Mars, point toward an origin of Phobos from material ejected by an impact on Mars that reaccreted in Martian orbit, similar to the prevailing theory for the origin of Earth's satellite. Although the visible and near-infrared (VNIR) spectra of the moons of Mars resemble those of outer-belt asteroids, the thermal infrared spectra of Phobos are reported to be inconsistent with chondrites of any class. It is also possible that Phobos and Deimos were fragments of an older moon, formed by debris from a large impact on Mars, and then destroyed by a more recent impact upon the satellite.<br><br>
+
+The environmental conditions on Mars are a challenge to sustaining organic life: the planet has little heat transfer across its surface, it has poor insulation against bombardment by the solar wind due to the absence of a magnetosphere and has insufficient atmospheric pressure to retain water in a liquid form (water instead sublimes to a gaseous state). Mars is nearly, or perhaps totally, geologically dead; the end of volcanic activity has apparently stopped the recycling of chemicals and minerals between the surface and interior of the planet.<br>
+
+
+    </p><br>
+
+    <center><a href="PLANET.html" style="text-decoration: none; color: inherit;">Click Here To Meet Some Other planets.</a></center><BR><BR><BR>
+        <center><a href="/index.HTML" style="text-decoration: none; color: inherit;">Click Here To Go Home Page.</a></center>
+    
+</body>
+</html>

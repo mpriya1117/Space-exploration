@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>MULTIUNIVERS</title>
+</head>
+<body>
+    <!--<style>
+        <!--body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        } -->
+        <!-- body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    /* Space gradient background */
+    background: radial-gradient(circle at 50% 30%, #1a1a2e, #000814 70%, #000);
+
+    /* Animated stars */
+    background-image:
+        url("https://www.transparenttextures.com/patterns/stardust.png"),
+        radial-gradient(circle at 50% 30%, #1a1a2e, #000814 70%, #000);
+    animation: stars 40s linear infinite;
+}
+
+/* star drifting effect */
+@keyframes stars {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 800px 800px, 0 0; }
+} -->
+<!--- body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: conic-gradient(
+        from 0deg,
+        rgba(255,0,200,0.15),
+        transparent,
+        rgba(0,150,255,0.15),
+        transparent
+    );
+    animation: swirl 12s linear infinite;
+    mix-blend-mode: screen;
+}
+
+@keyframes swirl {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+        header {
+            /*background: url('https://i.pinimg.com/564x/44/74/03/447403dd6f3ffd37aebf7503eb9287c4.jpg') no-repeat center center/cover;**/
+            padding: 50px 0;
+            color: #fff;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #222;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+        text-align: center;
+        }
+
+        .card {
+        width: 300px;
+        height: 375px;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(258,258 , 258 , 0.2);
+        overflow: hidden;
+        display: inline-block;
+        }
+
+        .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s;
+        }
+
+        .card:hover img {
+        transform: scale(1.1);
+        transform: rotateY(180deg);
+        }
+
+        .card .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: #fff;
+        transform: rotateY(180deg);
+        display: none;
+        }
+
+        .card:hover .back {
+        display: block;
+        }
+
+
+
+    </style> -->
+    <style>
+/* ---------- Cleaned & layered space background (no HTML changes) ---------- */
+/* Base page */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    /* base deep-space gradient (keeps your radial look) */
+    background: radial-gradient(circle at 50% 30%, #1a1a2e 0%, #000814 70%, #000 100%);
+    position: relative;   /* needed so pseudo-elements layer correctly */
+    overflow: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    background: radial-gradient(circle at 50% 30%, #1a1a2e 0%, #000814 70%, #000 100%);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+/* footer FIXED for scroll */
+footer {
+    background-color: #222;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+
+/* ---------- drifting star texture (layer 1) ---------- */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;          /* don't block clicks */
+    z-index: 0;                    /* behind content */
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.18;
+    mix-blend-mode: screen;
+    animation: stars 40s linear infinite;
+}
+
+/* star drift animation */
+@keyframes stars {
+    from { background-position: 0 0; }
+    to   { background-position: 800px 800px; }
+}
+
+/* ---------- rotating swirl overlay (layer 2) ---------- */
+body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;                    /* above stars, below page content */
+    opacity: 0.65;
+    mix-blend-mode: screen;
+    background: conic-gradient(
+        from 0deg,
+        rgba(255,0,200,0.10),
+        transparent 20%,
+        rgba(0,150,255,0.08),
+        transparent 60%
+    );
+    filter: blur(14px) saturate(1.05);
+    transform-origin: 50% 50%;
+    animation: swirl 12s linear infinite;
+}
+
+/* swirl rotation */
+@keyframes swirl {
+    0%   { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1.02); }
+}
+
+/* ---------- layout & content (kept as you had, cleaned) ---------- */
+header {
+    padding: 50px 0;
+    color: #fff;
+    position: relative;
+    z-index: 2; /* ensure header is above background layers */
+}
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: #222;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* ---------- cards / container (fixed invalid rgba) ---------- */
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    width: 300px;
+    height: 375px;
+    background-color: black;
+    border-radius: 10px;
+    /* fixed box-shadow rgba values */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.12);
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s;
+    backface-visibility: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotateY(180deg);
+}
+
+.card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    transform: rotateY(180deg);
+    display: none;
+}
+
+.card:hover .back {
+    display: block;
+}
+
+/* ensure page content sits above pseudo-elements */
+h1, p, a, section, .container, .card { position: relative; z-index: 2; }
+
+/* small responsive safety */
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .card { width: 90%; height: auto; }
+}
+</style>
+
+    
+    </head>
+    <body>
+    <header>
+
+        <h1>Multi Universe</h1>
+<br><br><br>
+<p align="left">
+   <b>Multiverse</b> , a hypothetical collection of potentially diverse observable universes, each of which would comprise everything that is experimentally accessible by a connected community of observers. The observable known universe, which is accessible to telescopes, is about 90 billion light-years across. However, this universe would constitute just a small or even infinitesimal subset of the multiverse. The multiverse idea has arisen in many versions, primarily in cosmology, quantum mechanics, and philosophy, and often asserts the actual physical existence of different potential configurations or histories of the known observable universe.
+    The term multiverse was coined by American philosopher William James in 1895 to refer to the confusing moral meaning of natural phenomena and not to other possible universes.<br><br>
+</p>
+    <div class="container">
+    <section class="card">
+       <center> <img src="https://i.pinimg.com/564x/08/11/aa/0811aa972b1c224085de197435cd1b2d.jpg"></center><br></section>
+    </div>
+       <p align="left">
+
+        Multiverse theories have been widely criticized as speculation or philosophy rather than science, which is indeed a legitimate concern regarding the more-disconnected types of multiverses. Less legitimate are criticisms of multiverse models that appear as a side effect of well-motivated and tested theories or that admit some level of empirical verification.<br><br>
+
+
+        The concept of multiple universes, or a multiverse, has been discussed throughout history, including Greek philosophy. It has evolved and has been debated in various fields, including cosmology, physics, and philosophy. Some physicists argue that the multiverse is a philosophical notion rather than a scientific hypothesis, as it cannot be empirically falsified. In recent years, there have been proponents and skeptics of multiverse theories within the physics community. Although some scientists have analyzed data in search of evidence for other universes, no statistically significant evidence has been found. Critics argue that the multiverse concept lacks testability and falsifiability, which are essential for scientific inquiry, and that it raises unresolved metaphysical issues. <br><br>
+
+        As skeptical as I am, I think the contemplation of the multiverse is an excellent opportunity to reflect on the nature of science and on the ultimate nature of existence: why we are here. ... In looking at this concept, we need an open mind, though not too open. It is a delicate path to tread. Parallel universes may or may not exist; the case is unproved. We are going to have to live with that uncertainty. Nothing is wrong with scientifically based philosophical speculation, which is what multiverse proposals are. But we should name it for what it is.<br><br>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+— George Ellis, "Does the Multiverse Really Exist?"
+
+<center><a href="OURUNIVERSE.HTML" style="text-decoration: none; color: inherit;"><h2><pre> click here to visit:
+ OUR UNIVERSE</pre></h2></a></center>
+
+       </p>
+
+    
+</body>
+</html>
